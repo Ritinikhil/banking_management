@@ -1,0 +1,2031 @@
+/*UNITY BANK*/
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<time.h>
+#include<dos.h>
+#include<dir.h>
+int main(void)
+{
+char em[1],singleline[10],userfile[10000],col[500],dob[500],u[100] ,just[60000],xi[60000] ,hmm[10000],op[60000],vp[200],ap[1000],lk[100],wp[1000],jk[10000],ab[10000],state[1000],colony[1000],az[100],reason[10000],id[1000],problem[65000],ok[1000],sug[10000],str[20];
+int otp,number,stat,einnn=0,einn=0,chee=' ',cheee=' ',ein=0,che=' ',t,i,amount,newpin,gph,credit,date,month,mon,name3,account,pin,live,see,code,x,no,cd,bc,c,C,y,a,w,z,k,d,luck, e,D,r,f,ag,o,l,p,h,as,ak,ad,au,ju,name1,name2 ,proof,acc,rate,passcode,money,trans,Account;
+textbackground(19);
+textcolor(BLUE);
+unsigned long long int lone=0,loneam=0,ar=0,arR=0,j=0;
+newpin=8543;
+clrscr();
+
+time_t s, val = 1;
+struct tm* current_time;
+
+    // time in seconds
+    s = time(NULL);
+
+    // to get current time
+    current_time = localtime(&s);
+
+    // print time in minutes,
+    // hours and seconds
+
+
+    time_t dk;
+    dk = time(NULL);
+
+    struct tm tm = *localtime(&dk);
+date=tm.tm_mday;
+month=tm.tm_mon+1;
+newpin=1543+current_time->tm_hour+ current_time->tm_min+current_time->tm_sec+date+month+tm.tm_year+1900;
+
+printf("\n\t\t\t\tVIRTUAL BANK");
+printf("\n\n\t\t\t\t       \n\t\t\t\t       \n\t\t\t\t    ");
+{
+printf("\n\n\n\n\n                            WELCOME TO UNITY BANK \n\n\t\t\t     (SECURED BY YUKOMZ) ");
+printf("\n\n\n\n\n\n\nPRESS ENTER TO CONTINUE");
+getch();
+clrscr();
+printf("\n\n\n\nEnter Bank's login CODE: ");
+while (einnn<=3)
+{
+    str[einnn]=getche();
+    cheee=str[einnn];
+    if(cheee==13) break;
+    else printf("");
+    einnn++;
+}
+str[einnn]='\0';
+passcode=atoi(str);
+sound(400);
+delay(200);
+nosound();
+if(passcode==2000)
+{
+clrscr();
+  printf("LOGIN TIME: %02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+printf("\t\t\t\tCurrent Date: %d-%d-%d", tm.tm_mday, tm.tm_mon+1, tm.tm_year+1900);
+printf("\n\n\n Press 1 to Transfer money\n\n Press 2 for transaction\n\n Press 3 for Forex Exchange\n\n Press 4 to get more information about US.\n\n Press 5 to file Application for loan.\n\n Press 6 for Application for New Account.\n\n Press 7 to CONTACT US.\n\n Press 8 to Register any issue\n\n Press 9 to have LIVE CHAT\n\n Press 10 to see YOUR DETAILS\n  ");
+scanf("%d",&a);
+clrscr();
+
+
+
+switch(a)
+{
+case 1:
+printf("\n\n\t\t\t    WELCOME TO TRANSFER UNIT");
+printf("\n\nPlease enter your account no::7567 ");
+scanf("%d",&mon);
+Account=mon;
+printf("\n\n\nPlease enter your secret code::");
+
+while (ein<=3)
+{
+    str[ein]=getch();
+    che=str[ein];
+    if(che==13) break;
+    else printf("*");
+    ein++;
+}
+str[ein]='\0';
+w=atoi(str);
+clrscr();
+gph=mon-113;
+sound(400);
+delay(200);
+nosound();
+if(w==gph)
+{
+       otp= (rand() % 100+rand()%100*100)+7819;
+       printf("\nCODE:%d\n",otp);
+       printf("\n\nPlease Enter The Above Code:::");
+       scanf("%d",&number);
+       if(number!=otp)
+       {
+       clrscr();
+       printf("\n\n\n!!SORRY!! LAST TRANSACTION CANCELLED");
+       getch();
+       exit(1);
+       }
+       if(number==otp)
+       {clrscr();
+printf("\n\n\nVerifying..........");
+printf("\n\nPlease enter amount:");
+scanf("%lld",&j);
+money=j;
+if(j>10000)
+ {
+clrscr();
+printf("\n\n\n\n\n\n\t\t\t!!Sorry You cannot Tranfer More than 10000 at a Time!!");
+getch();
+exit(1);
+ }
+
+printf("\n\nProcessing amount.....");
+printf("\n\nEnter Account NO. to Transfer Money:::");
+scanf("%d",&account);
+trans=account;
+  FILE * fp1;
+  sprintf(userfile,"t%d.txt",account);
+  fp1 = fopen(userfile, "r");
+  if(fp1==NULL)
+  {
+  clrscr();
+  printf("\n\n\n\n\n\t\t\t!!SORRY!! NO SUCH ACCOUNT HAS BEEN CREATED!");
+  getch();
+  exit(1);
+  }
+  if(fp1!=NULL)
+  {
+printf("\n\nROBOT TEST \t\t(Press Enter)");
+getch();
+clrscr();
+if(j<10001)
+{
+
+  fclose(fp1);
+  FILE * fp;
+  sprintf(userfile,"t%d.txt",mon);
+  fp = fopen(userfile, "r");
+
+
+
+    if(fp==NULL)
+    {
+    clrscr();
+    sound(400);
+delay(200);
+nosound();
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+    exit(1);
+    }
+
+
+  if(fp!=NULL)
+  {
+  fscanf(fp,"%lld",&ar);
+  while(!feof(fp))
+  {
+  fscanf(fp,"%lld",&ar);
+  }
+  fclose(fp);
+     if(ar+1>j)
+     {
+    FILE * fPointer1;
+sprintf(userfile,"t%d.txt",mon);
+fPointer1= fopen(userfile,"w");
+arR=ar-j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+sound(400);
+delay(200);
+nosound();
+FILE * fPointer;
+fPointer = fopen("transaction.txt","a");
+fprintf(fPointer,"\nDATE : %d/0%d/2021",date,month);
+fprintf(fPointer,"\n7567 %d account",mon);
+fprintf(fPointer,"\nTransfer amount %d",j);
+fprintf(fPointer,"\nTransfer to %d",account);
+fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(fPointer,"\nAvailable Amount : %11u\n\n",arR);
+fclose(fPointer);
+FILE*pf;
+    sprintf(userfile, "%dh.txt",mon);
+    pf = fopen(userfile, "a");
+    fprintf(pf,"\nDATE : %d/0%d/2021",date,month);
+fprintf(pf,"\n7567 %d account",mon);
+fprintf(pf,"\nTransfer amount %d",j);
+fprintf(pf,"\nTransfer to %d",account);
+fprintf(pf,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(pf,"\nAvailable Money : %d\n\n",arR);
+fclose(pf);
+ printf("\n\n\nAVAILABLE AMOUNT:::%d\n\n",arR);
+  getch();
+  FILE*fp;
+  fp = fopen("ammount.txt", "r");
+  fscanf(fp,"%lld",&ar);
+while(!feof(fp))
+{
+fscanf(fp,"%lld",&ar);
+}
+fclose(fp);
+fPointer1 = fopen("ammount.txt","w");
+arR=ar-j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+
+
+if(j<10001)
+{
+
+
+FILE * fp;
+sprintf(userfile,"t%d.txt",account);
+fp = fopen(userfile, "r");
+if(fp==NULL)
+    {clrscr();
+    sound(400);
+    delay(200);
+    nosound();
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+    exit(1);
+    }
+if(fp!=NULL)
+{
+fscanf(fp,"%lld",&ar);
+while(!feof(fp))
+{
+fscanf(fp,"%lld",&ar);
+
+}
+fclose(fp);
+FILE * fPointer1;
+sprintf(userfile,"t%d.txt",account);
+fPointer1= fopen(userfile,"w");
+arR=ar+j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+FILE * fPointer;
+fPointer = fopen("transaction.txt","a");
+fprintf(fPointer,"\n\nDATE : %d/0%d/2021",date,month);
+fprintf(fPointer,"\n7567 %d account",account);
+fprintf(fPointer,"\nTransfer Recieve amount %d",j);
+fprintf(fPointer,"\nAmount Sent From %d",mon);
+fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(fPointer,"\nAvailable Money : %d\n\n",arR);
+fclose(fPointer);
+
+FILE * pf;
+sprintf(userfile, "%dh.txt",account);
+pf = fopen(userfile, "a");
+fprintf(pf,"\nDATE : %d/0%d/2021",date,month);
+fprintf(pf,"\n7567 %d account",account);
+fprintf(pf,"\nTransfer Recieve amount %d",j);
+fprintf(pf,"\nAmount Sent From %d",mon);
+fprintf(pf,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(pf,"\nAvailable Money : %d\n\n",arR);
+fclose(pf);
+ clrscr();
+ printf("\n\n%d Ammount Succesfully Sent from 7536 %d to 7536 %d\n\n",money,Account,trans);
+
+ getch();
+ FILE*fp;
+fp = fopen("ammount.txt", "r");
+fscanf(fp,"%lld",&ar);
+while(!feof(fp))
+{
+fscanf(fp,"%lld",&ar);
+}
+fclose(fp);
+fPointer1= fopen("ammount.txt","w");
+arR=ar+j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+ if(ar+1<j)
+ {clrscr();
+ sound(400);
+delay(200);
+nosound();
+sound(400);
+delay(200);
+nosound();
+ printf("\n\n\n!!SOORY!!INSUFFICIENT BALANCE");
+ printf("\n\nAVAILABLE BALANCE:::%lld",ar);
+ if(ar<50)
+ {
+ textattr(2 + ((8) << 4));
+ cprintf("Low Balance");
+ }
+}
+}}}}}}}}
+clrscr();
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+getch();
+
+break;
+
+case 2:
+textattr(1 + ((3) <<4));
+clrscr();
+printf("\n\n\n>Press 1 for Widthdrawl\n\n\n>Press 2 for Deposition.\n\n");
+scanf("%d",&p);
+clrscr();
+if(p==1)
+{
+printf("\n\n\t\t\t    WELCOME TO WIDTHDRAWL UNIT");
+printf("\n\nPlease enter your account no::7567 ");
+scanf("%d",&mon);
+printf("\n\n\nPlease enter your secret code::");
+while (ein<=3
+){
+    str[ein]=getch();
+    che=str[ein];
+    if(che==13) break;
+    else printf("*");
+    ein++;
+}
+str[ein]='\0';
+w=atoi(str);
+clrscr();
+gph=mon-113;
+sound(400);
+delay(200);
+nosound();
+if(w==gph)
+{
+
+clrscr();
+printf("\n\n\nVerifying..........");
+printf("\n\nPlease enter amount:");
+scanf("%lld",&j);
+if(j>10000)
+{
+clrscr();
+ textattr(2 + ((8) << 4));
+printf("\n\n\n\n\n!!Sorry Amount exceeds 10000!!");
+getch();
+exit(1);
+}
+printf("\n\nProcessing amount.....");
+printf("\n\nROBOT TEST \t\t(Press Enter)");
+getch();
+clrscr();
+if(j<10001)
+{
+
+
+  FILE * fp;
+  sprintf(userfile,"t%d.txt",mon);
+  fp = fopen(userfile, "r");
+
+
+
+    if(fp==NULL)
+    {
+    clrscr();
+    sound(400);
+delay(200);
+nosound();
+ textattr(2 + ((8) << 4));
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+     getch();
+    }
+
+
+  if(fp!=NULL)
+  {
+  fscanf(fp,"%lld",&ar);
+  while(!feof(fp))
+  {
+  fscanf(fp,"%lld",&ar);
+  }
+
+
+
+    if(fp==NULL)
+    {
+    sound(400);
+delay(200);
+nosound();
+ textattr(2 + ((8) << 4));
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+    fclose(fp);
+    }
+     if(ar+1>j)
+     {
+int otp,otp1;
+otp=random(1000)+17890;
+printf("\n\nOTP : %d\n",otp);
+printf("Enter The above No. To Continue :");
+scanf("%d",&otp1);
+if(otp1!=otp)
+{
+clrscr();
+printf("\nLast Transaction was cancelled:");
+printf("\n\n!SORRY!");
+getch();
+exit(1);
+}
+    FILE * fPointer1;
+sprintf(userfile,"t%d.txt",mon);
+fPointer1= fopen(userfile,"w");
+arR=ar-j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+sound(400);
+delay(200);
+nosound();
+printf("\n\nKINDLY COLLECT AMOUNT:::%lld",j);
+FILE * fPointer;
+fPointer = fopen("transaction.txt","a");
+fprintf(fPointer,"\nDATE : %d/0%d/2021",date,month);
+fprintf(fPointer,"\n7567 %d account",mon);
+fprintf(fPointer,"\nWidthdrawl amount %d",j);
+fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(fPointer,"\nAvailable Amount : %lld\n\n",arR);
+fclose(fPointer);
+   FILE * pf= NULL;
+    sprintf(userfile, "%dh.txt",mon);
+    pf = fopen(userfile, "a");
+    fprintf(pf,"\nDATE : %d/0%d/2021",date,month);
+fprintf(pf,"\n7567 %d account",mon);
+fprintf(pf,"\nWidthdrawl amount %d",j);
+fprintf(pf,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(pf,"\nPIN : %d",w);
+fprintf(pf,"\nAvailable Money : %11u\n\n",arR);
+ fclose(pf);
+ printf("\n\n\nAVAILABLE AMOUNT:::%11u",arR);
+ if(arR<50)
+ {
+  textattr(2 + ((8) << 4));
+ printf("Low Balance");
+ }
+ long int ar=0;
+  fp = fopen("ammount.txt", "r");
+fscanf(fp,"%lld",&ar);
+while(!feof(fp))
+{
+fscanf(fp,"%lld",&ar);
+}
+fclose(fp);
+
+fPointer1 = fopen("ammount.txt","w");
+arR=ar-j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+     }
+ if(ar+1<j)
+ {clrscr();
+ sound(400);
+delay(200);
+nosound();
+sound(400);
+delay(200);
+nosound();
+ textattr(1 + ((3) <<6));
+ printf("\n\n\n!!SOORY!!INSUFFICIENT BALANCE");
+ printf("\n\nAVAILABLE BALANCE:::%lld",ar);
+ if(ar<50)
+{ textattr(2 + ((8) << 4));
+printf("Low Balance");
+ }
+ }
+ }
+getch();
+
+}
+}
+}
+
+if (p==2)
+{
+printf("\n\n\t\t\t   WELCOME TO DEPOSITION UNIT");
+printf("\n\nPlease enter your account no::7567 ");
+scanf("%d",&mon);
+printf("\n\n\nPlease enter your secret code::");
+while (ein<=3
+){
+    str[ein]=getch();
+    che=str[ein];
+    if(che==13) break;
+    else printf("*");
+    ein++;
+}
+str[ein]='\0';
+w=atoi(str);
+clrscr();
+sound(400);
+delay(200);
+nosound();
+if(w==mon-113)
+{
+       int otp,number;
+       otp= (rand() % 100+rand()%100*100)+7819;
+       printf("\nCODE:%d\n",otp);
+       printf("\n\nPlease Enter The Above Code:::");
+       scanf("%d",&number);
+       if(number!=otp)
+       {
+       clrscr();
+       printf("\n\n\n!!SORRY!! LAST TRANSACTION CANCELLED");
+       getch();
+       exit(1);
+       }
+       if(number==otp)
+       {clrscr();
+printf("\n\n\nVerifying.........");
+printf("\n\nPlease enter deposit amount:");
+scanf("%lld",&j);
+if(j>10000)
+{
+clrscr();
+printf("\n\n\n\n\n!!Sorry Amount exceeds 10000!!");
+getch();
+exit(1);
+}
+if(j<10001)
+{
+printf("\n\nProcessing amount.....");
+printf("\n\nROBOT TEST \t\t(Press Enter)");
+getch();
+int otp,otp1;
+otp=random(1000)+17890;
+printf("\n\nOTP : %d\n",otp);
+printf("Enter The above No. To Continue :");
+scanf("%d",&otp1);
+if(otp1!=otp)
+{
+clrscr();
+printf("\nLast Transaction was cancelled:");
+printf("\n\n!SORRY!");
+getch();
+exit(1);
+}
+clrscr();
+printf("\n\n\n\nKindly deposit amount %lld",j);
+sound(400);
+delay(200);
+nosound();
+
+
+FILE * fp;
+sprintf(userfile,"t%d.txt",mon);
+fp = fopen(userfile, "r");
+if(fp==NULL)
+    {clrscr();
+    sound(400);
+delay(200);
+nosound();
+     textattr(2 + ((8) << 4));
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+    getch();
+    }
+if(fp!=NULL)
+{
+fscanf(fp,"%lld",&ar);
+while(!feof(fp))
+{
+fscanf(fp,"%lld",&ar);
+}
+FILE * fPointer1;
+sprintf(userfile,"t%d.txt",mon);
+fPointer1= fopen(userfile,"w");
+arR=ar+j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+FILE * fPointer;
+fPointer = fopen("transaction.txt","a");
+fprintf(fPointer,"\n\nDATE : %d/0%d/2021",date,month);
+fprintf(fPointer,"\n7567 %d account",mon);
+fprintf(fPointer,"\nDeposition amount %lld",j);
+fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(fPointer,"\nAvailable Money : %lld\n\n",arR);
+fclose(fPointer);
+
+FILE * pf=NULL;
+sprintf(userfile, "%dh.txt",mon);
+pf = fopen(userfile, "a");
+fprintf(pf,"\nDATE : %d/0%d/2021",date,month);
+fprintf(pf,"\n7567 %d account",mon);
+fprintf(pf,"\nDeposition amount %lld",j);
+fprintf(pf,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(pf,"\nAvailable Money : %lld\n\n",arR);
+fclose(pf);
+	     textattr(1 + ((3) <<4));
+ printf("\n\n\nAVAILABLE AMOUNT:::%lld",arR);
+
+
+fp = fopen("ammount.txt", "r");
+fscanf(fp,"%lld",&ar);
+while(!feof(fp))
+{
+fscanf(fp,"%lld",&ar);
+}
+fclose(fp);
+fPointer1= fopen("ammount.txt","w");
+arR=ar+j;
+fprintf(fPointer1,"%lld",arR);
+fclose(fPointer1);
+getch();
+}}
+}}}
+clrscr();
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+break;
+case 3:
+textattr(1 + ((3) <<4));
+printf("\n\t\t\t   FOREX EXCHANGE");
+printf("\n\n\nROBOT CHECK \t\t\t\t\t(PRESS ENTER 3 TIMES)");
+getch();
+getch();
+getch();
+printf("\n\n\nYOU PROVED TO BE HUMAN");
+printf("\n\n\tACCOUNT NO: 7567 ");
+scanf("%d",&acc);
+FILE * pff;
+sprintf(userfile, "%d.txt",acc);
+pff = fopen(userfile, "r");
+if(pff==NULL)
+{
+ textattr(2 + ((8) << 4));
+printf("\n\n\nNO SUCH ACCOUNT HAS BEEN CREATED ");
+textattr(1 + ((3) <<4));
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+exit(1);
+}
+if(pff!=NULL)
+{
+printf("\n\n\tPIN:");
+while (ein<=3
+){
+    str[ein]=getch();
+    che=str[ein];
+    if(che==13) break;
+    else printf("*");
+    ein++;
+}
+str[ein]='\0';
+w=atoi(str);
+
+}
+fclose(pff);
+if(w==acc-113)
+
+
+{
+
+
+FILE* fPointer;
+
+	fPointer = fopen("forex.txt","a");
+	clrscr();
+	printf("\n\n\tWE HAVE ABOVE CURRENCY");
+	printf("\n\n\n\tU.S. DOLLARS \n\tEUROS\n\tDHIRAM");
+	printf("\n\n>Press 1 for Dollars to RUPPEES\n>Press 2 for EUROS to RUPPEES\n>Press 3 for DHIRAM to RUPPEES\n ");
+
+scanf("%d",&x);
+if(x==1)
+{       textattr(1 + ((3) <<4));
+	printf("\nEnter Dollars :");
+	scanf("%lld",&d);
+	if(d<451)
+	{
+	r=d*76;
+	printf("\nYOU GET %lld RUPPEES OF %lld DOLLARS",r,d);
+	fprintf(fPointer,"\n\nACCOUNT NO : 7567 %lld get %lld RUPPEES of %lld DOLLARS",acc,r,d);
+
+	}
+	if(d>450)
+	{clrscr();
+	printf("!!SORRY WE DON't GIVE MORE THAN 450 USD");
+	}
+	getch();
+}
+if(x==2)
+{       textattr(1 + ((3) <<4));
+	printf("\nEnter Euros :");
+	scanf("%lld",&e);
+	if(e<401)
+	{
+	r=e*85;
+	printf("YOU GET %lld RUPPEES OF %lld EUROS",r,e);
+	fprintf(fPointer,"\n\nACCOUNT NO : 7567 %lld get %lld RUPPEES of %lld EUROS",acc,r,e);
+
+	getch();
+	}
+	if(e>400)
+	{
+	clrscr();
+	printf("!!SORRY WE DON't GIVE MORE THAN 400 EUROS");
+	}
+
+}
+
+if(x==3)
+{       textattr(1 + ((3) <<4));
+	printf("\nEnter Dhirams :");
+	scanf("%lld",&D);
+	r=20*D;
+	if(D<1701)
+	{
+	printf("YOU GET %lld RUPPEES OF %lld DHIRAMS",r,D);
+	fprintf(fPointer,"\n\nACCOUNT NO : 7567 %lld get %lld RUPPEES of %lld DHIRAMS",acc,r,D);
+		 }
+	 if(D>1700)
+	 {
+	 clrscr();
+	 printf("SORRY WE DONT GIVE MORE THAN 1700 DHIRAMS");
+	 }
+	getch();
+}
+
+if(x>3)
+{
+	 clrscr();
+	 textattr(2 + ((8) << 4));
+	printf("\n\n\n\nINVALID INFORMATION");
+	getch();
+}}
+clrscr();
+textattr(1 + ((3) <<4));
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+break;
+case 4:
+textattr(1 + ((3) <<4));
+printf("\n\n\n\t\t\tOUR RULES");
+printf("\n\n\n>WE DO NOT GIVE MORE THAN 400 U.S.D. TO A SINGLE PERSON\n\n>WE DO NOT GIVE MORE THAN 420 EUROS TO A SINGLE PERSON \n\n>WE ALSO DO NOT GIVE MORE THAN 1700 DHIRAMS TO A SINGLE PERSONS \n\n>WE ONLY CREATE ACCOUNT AT ONLY AGE OF 18 YEARS OLD TEENAGERS \n\n>LOANS ARE NOT GIVEN FOR THAN 5 YEARS.\n\n>DEVELOPER CREDIT GOES TO:::NIKHIL SINGH\n\n>WE DO NOT MAKE NEW ACCOUNTS OF THOSE WHO ARE NOT 18 IN PRESENT YEAR\n\n>BASIC CREDIT SCORE IS 100 \n\n\n>>>*NOTE THAT OUR BANK CODE IS 2000");
+getch();
+clrscr();
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANK YOU FOR CHOOSING UNITY BANK");
+break;
+case 5:
+printf("\n\n\t\t\tWELCOME to LOAN BRANCH");
+printf("\n\n\nHUMAN VERIFICATION\t\t\t\t(PRESS ENTER 3 TIMES)");
+getch();
+getch();
+getch();
+clrscr();
+printf("\n\nPLEASE ENTER FEW DETAIL");
+printf("\n\nEnter last four digit of Account no:");
+scanf("%d",&t);
+  FILE * fpp;
+  sprintf(userfile,"t%d.txt",t);
+  fpp = fopen(userfile, "r");
+
+
+
+    if(fpp==NULL)
+    {
+    clrscr();
+    sound(400);
+delay(200);
+nosound();
+    textattr(1 + ((3) <<6));
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+     getch();
+     exit(1);
+    }
+
+printf("\nPIN:");
+while (ein<=3
+){
+    str[ein]=getch();
+    che=str[ein];
+    if(che==13) break;
+    else printf("*");
+    ein++;
+}
+str[ein]='\0';
+w=atoi(str);
+sound(400);
+delay(200);
+nosound();
+if(w==t-113)
+{clrscr();
+printf("\nCVV NO:");
+while (einn<=2){
+    str[einn]=getch();
+    chee=str[einn];
+    if(chee==13) break;
+    else printf("*");
+    einn++;
+}
+str[einn]='\0';
+C=atoi(str);
+printf("\nAge:");
+scanf("%d",&f);
+if(f<18)
+{
+clrscr();
+printf("\n\nNOT APPLICABLE TO GET LOAN");
+getch();
+}
+if(f>17)
+{clrscr();
+printf("\n\nEnter amount for loan:");
+scanf("%lld",&lone);
+printf("\n\nEnter time(in months) for loan(approx):");
+scanf("%d",&o);
+if(o>60)
+{clrscr();
+sound(400);
+delay(200);
+nosound();
+printf("\n\nNOT APPLICABLE TO GET LOAN");
+getch();
+}
+if(o<61)
+{
+printf("\n\nEnter your Credit score:");
+scanf("%d",&ag);
+if(ag<100)
+{
+clrscr();
+sound(400);
+delay(200);
+nosound();
+ textattr(2 + ((8) << 4));
+printf("\n\nNOT APPLICABLE TO GET LOAN");
+getch();
+}
+if(ag>99)
+{
+FILE * fPointer;
+fPointer = fopen("loan.txt","a");
+char em[1];
+gets(em);
+printf("\n\nEnter type of loan:\n>");
+gets(reason);
+printf("\n\nEnter Collatral Security:\n>");
+gets(col);
+clrscr();
+sound(400);
+delay(200);
+nosound();
+loneam=lone+lone*3/100+o;
+
+printf("\n\n\nAccount no.7567%d  of Age %d is applicable to get %s .\nInterest rate for loan is 3%\n",t,f,reason);
+printf("\n\nLONE FINAL AMOUNT:::%lld",loneam);
+
+printf("\n\n\n\nPRESS ENTER");
+
+
+getch();
+clrscr();
+l=t+f+o;
+
+printf("\n\n\n\nYour application for loan is filed\n\nYour Application no. is 6677%d\n\nWE will soon send you further details on registered mobile\n",l);
+fprintf(fPointer,"\n\nDATE : %d/0%d/2021",date,month);
+fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(fPointer,"\nACCOUNT NO:7567 %d",t);
+fprintf(fPointer,"\nBANK's PIN:%d",w+3);
+fprintf(fPointer,"\nCVV NO:%d",C);
+fprintf(fPointer,"\nAGE:%d",f);
+fprintf(fPointer,"\nAMMOUNT:%lld",lone);
+fprintf(fPointer,"\nCREDIT SCORE:%d",ag);
+fprintf(fPointer,"\nTIME(in months):%d",o);
+fprintf(fPointer,"\nPURPOSE:%s loan",reason);
+fprintf(fPointer,"\nLOAN ID:6677 %d",l);
+fprintf(fPointer,"\nCollatral Security: %s",col);
+fprintf(fPointer,"\nTOTAL MONEY PAID:%lld",loneam);
+fprintf(fPointer,"\n\nSTATUS ::: ");
+fclose(fPointer);
+FILE * PFF=NULL;
+sprintf(userfile,"%dloan",t);
+PFF=fopen(userfile,"w");
+fclose(PFF);
+fprintf(PFF,"%lld",loneam);
+ FILE * pf=NULL;
+    sprintf(userfile, "%da.txt",t);
+    pf = fopen(userfile, "a");
+     fprintf(pf,"\nDATE : %d/0%d/2021",date,month);
+     fprintf(pf,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(pf,"\nACCOUNT NO:7567 %d",t);
+fprintf(pf,"\nCVV NO:%d",C);
+fprintf(pf,"\nAGE:%d",f);
+fprintf(pf,"\nAMMOUNT:%lld",lone);
+fprintf(pf,"\nCREDIT SCORE:%d",ag);
+fprintf(pf,"\nTIME(in months):%d",o);
+fprintf(pf,"\nPURPOSE:%s loan",reason);
+fprintf(pf,"\nLOAN ID:6677 %d",l);
+fprintf(pf,"\nCollatral Security: %s",col);
+fprintf(pf,"\nTOTAL MONEY PAID:%lld",loneam);
+    fclose(pf);
+
+    sprintf(userfile, "s%d.txt",t);
+    pf = fopen(userfile, "w");
+    fprintf(pf,"\nStatus:::Pending loan ammount:%lld\nTo pay:%lld",lone,loneam);
+    fclose(pf);
+
+
+
+
+printf("\n\n\n\n\n\n*NOTE:\nVERIFICATION IS DONE AT LOAN BRANCH AFTER VERIFICATION YOU ARE ABLE TO GET \n%s LOAN",reason);
+getch();
+}}}}
+clrscr();
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+break;
+case 6:
+clrscr();
+printf("\n\n\n\t\t            NEW ACCOUNT APPLICATION FORM\n\n");
+gets(em);
+printf("\nNAME:");
+gets(vp);
+printf("\nFATHER's NAME:");
+gets(ap);
+printf("\nMOTHER's NAME:");
+gets(wp);
+printf("\nAGE:");
+scanf("%d",&as);
+gets(em);
+printf("\nDate of Birth:");
+gets(dob);
+ad=2022-as;
+if(as>18)
+{ak=as-18;
+clrscr();
+printf("\n\n\nYOU ARE NOT APPLICABLE FOR NEW ACCOUNT\n\nYOU ARE %d YEARS OLDER FOR NEW ACCOUNT\n\nWE TAKE ONLY TEENAGERS OF 18yrs.",ak);
+printf("\n\nYOU BORN IN %d YEAR",ad);
+printf("\n\n\n\n\n\t\t\t\t!!SORRY!!");
+getch();
+}
+if(as<18)
+{
+ak=18-as;
+clrscr();
+printf("\n\n\nYOU ARE TOO YOUNGER TO CREATE NEW ACCOUNT\n\nPLEASE COME AFTER %d YEARS",ak);
+printf("\n\nYOU BORN IN %d YEAR",ad);
+printf("\n\n\n\n\n\t\t\t\t!!SORRY!!");
+getch();
+}
+if(as==18)
+{
+clrscr();
+printf("\nSTATE: ");
+gets(state);
+printf("\nCITY: ");
+gets(jk);
+printf("\nSector: ");
+
+gets(colony);
+printf("\nHouse NO: ");
+gets(az);
+printf("\n\n\nTHANK YOU \n\n\nPress Enter");
+getch();
+clrscr();
+printf("\n\n\nMOBILE NO:");
+gets(lk);
+clrscr();
+printf("\n\n\nGOVERNMENT ID PROOF ");
+printf("\n\n\n\nPress 1 for AADHAR CARD\n\nPress 2 for PAN CARD\n\n");
+scanf("%d",&proof);
+if(proof==1)
+{
+clrscr();
+
+printf("\n\n\nPLEASE ENTER YOUR AADHAR NO:::");
+scanf("%s",&id);
+printf("\n\n\n\t\t\tTHANK YOU (press enter)");
+getch();
+clrscr();
+printf("\n\n\n\n\n\nTHANK YOU VERY MUCH FOR SUBMITTING ADHAR CARD");
+getch();
+}
+if(proof==2)
+{clrscr();
+printf("\n\n\nPLEASE ENTER YOUR PAN NO:::");
+scanf("%s",&id);
+printf("\n\n\n\t\t\tTHANK YOU (press enter)");
+getch();
+clrscr();
+printf("\n\n\n\n\n\nTHANK YOU VERY MUCH FOR SUBMITTING PAN NO:");
+getch();
+}
+if(proof<3)
+{
+
+
+au=(strcmpi(vp,ap));
+name1=(strcmpi(vp,wp));
+ju=newpin-au+name1;
+name2=200-name1;
+
+
+name3=ju-113;
+  FILE * pf;
+    sprintf(userfile, "%d.txt", ju);
+    pf = fopen(userfile, "r");
+    if(pf!=NULL)
+    {
+    ju=ju+1;
+
+    }
+    clrscr();
+    if(ju>9999)
+    {
+    sound(400);
+    delay(200);
+    nosound();
+    printf("\n\n\n\n\n\n\t\t\t!!SORRY,We don't have New ACCOUNTS Vacancy!!");
+    getch();
+    exit(1);
+    }
+    if(pf==NULL)
+    {
+    clrscr();
+    sound(400);
+delay(200);
+nosound();
+clrscr();
+printf("\n\n________________________________________________________________");
+printf("\nOur Terms And Conditions");
+printf("\n>Bank is not Responsible for any fraud\n>Never Share Your Account Details To Bank\n>If Your Pin leaks than Inform the Bank First\n>If any False transactions has been made than inform the Bank\n>Do not share your Pin\n>Bank Never ask for Your Pin");
+printf("\n_________________________________________________________________");
+randomize();
+int otp,otp1;
+otp=random(1000)+17890;
+printf("\n\nOTP : %d\n",otp);
+printf("Enter The above No. To Accept Our Terms And Conditions");
+printf("\nOtherwise Account Creation has been Aborted:  ");
+scanf("%d",&otp1);
+if(otp1==otp)
+{
+clrscr();
+printf("\n\n\n\n\t\t\t\tCONGRATULATIONS");
+printf("\n\n\t\t  YOUR ACCOUNT HAS BEEN CREATED");
+printf("\n\n\nACCOUNT NO::: 7567%d",ju);
+printf("\n\nCVV NO:::%d",name2);
+printf("\n\nYour Secret PIN:::%d",ju-113);
+printf("\n\nIssue Year:::2022\n\nExpire:::2042");
+printf("\n\n\n>>>*NOTE- BANK's CODE IS 2000");
+printf("\n\n\nPRESS ENTER TO LEAVE");
+getch();
+    sprintf(userfile, "%d.txt", ju);
+    pf = fopen(userfile, "w");
+    fprintf(pf,"\nDATE : %d/%d/2022",date,month);
+fprintf(pf,"\nNAME : %s",vp);
+fprintf(pf,"\nFATHER's NAME : %s",ap);
+fprintf(pf,"\nMOTHERS's NAME : %s",wp);
+fprintf(pf,"\nADDERESS : House no. %s of Sector %s in %s City of %s State",az,colony,jk,state);
+fprintf(pf,"\nMOBILE NO : %s",lk);
+fprintf(pf,"\nGOVERNMENT ID : %s",id);
+fprintf(pf,"\nAGE : 18");
+fprintf(pf,"\nDOB : %s",dob);
+fprintf(pf,"\nACCOUNT NO : 7567 %d",ju);
+fprintf(pf,"\nCVV NO : %d",name2);
+fprintf(pf,"\nSECRET PIN : %d",ju-113);
+    fclose(pf);
+
+    sprintf(userfile, "t%d.txt", ju);
+    pf = fopen(userfile, "a");
+    fprintf(pf,"00");
+    fclose(pf);
+
+clrscr();
+printf("\n\n>Press 1 to see your DETAILS again\n\n>Press 2 to LOGOUT\n\n ");
+scanf("%d",&see);
+if(see==1)
+{sound(400);
+delay(200);
+nosound();
+clrscr();
+printf("\t\t\tYOUR DETAILS");
+printf("\n\nNAME : %s",vp);
+printf("\n\nFATHER's NAME : %s",ap);
+printf("\n\nMOTHERS's NAME : %s",wp);
+printf("\n\nADDERESS : House no. %s of Sector %s in %s City of %s State.",az,colony,jk,state);
+printf("\n\nMOBILE NO : %s",lk);
+printf("\r\n\nGOVERNMENT ID : %s",id);
+if(proof==1)
+{printf("\r\n(AADHAR CARD)");
+}
+if(proof==2)
+{
+printf("\n(PAN CARD)");
+}
+printf("\n\nAGE : 18");
+printf("\n\nDOB : %s",dob);
+printf("\n\n\nACCOUNT NO : 7567%d",ju);
+printf("\n\nCVV NO : %d",name2);
+printf("\n\nSECRET PIN : %d",ju-113);
+name3=newpin-name2;
+getch();
+}
+
+}}
+if(proof>2)
+{
+clrscr();
+sound(400);
+delay(200);
+nosound();
+printf("\n\n\n\n\n\nSOMETHING WENT WRONG:");
+getch();
+}
+clrscr();
+FILE * fPointer;
+fPointer = fopen("account.txt","a");
+fprintf(fPointer,"\n\n\nDATE : %d/%d/2022",date,month);
+fprintf(fPointer,"\nNAME : %s",vp);
+fprintf(fPointer,"\nFATHER's NAME : %s",ap);
+fprintf(fPointer,"\nMOTHERS's NAME : %s",wp);
+fprintf(fPointer,"\nADDERESS : House no. %s of Sector %s in %s City of %s State",az,colony,jk,state);
+fprintf(fPointer,"\nMOBILE NO : %s",lk);
+fprintf(fPointer,"\nGOVERNMENT ID : %s",id);
+if(proof==1)
+{
+fprintf(fPointer,"\nID (AADHAR CARD)");
+}
+if(proof==2)
+{
+fprintf(fPointer,"\nID (PAN CARD)");
+}
+fprintf(fPointer,"\nAGE : 18");
+fprintf(fPointer,"\nDOB : %s",dob);
+fprintf(fPointer,"\nACCOUNT NO : 7567 %d",ju);
+fprintf(fPointer,"\nCVV NO : %d",name2);
+fprintf(fPointer,"\nSECRET PIN : %d",ju-113);
+fprintf(fPointer,"\nBank's Pin: %d",ju-110);
+fprintf(fPointer,"\n\nACCOUNT MONEY:::00");
+fclose(fPointer);
+
+}}
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+break;
+case 7:
+clrscr();
+printf("\n\n\t\t\tCONTACT US ");
+printf("\n\nE-MAIL:  UNITY BANK @ gmail.com\n\nCOSTUMER SERIVE:  90909090\n\nFAX:  56565656\n\nTWEET US ON:  UNITY/TWITTER\n\nJOIN OUR TELEGRAM GROUP:  UNITY GRAM\n\n");
+getch();
+clrscr();
+printf("\n>Press 1 to give us FEED BACK\n\n>Press 2 to Exit\n\n");
+scanf("%d",&h);
+if(h==1)
+{
+clrscr();
+gets(em);
+printf("\n\n\nWE VALUE YOUR VIEWS\n\n");
+gets(op);
+printf("\n\nEnter Your ACCOUNT NO :7567 ");
+scanf("%d",&acc);
+
+printf("\n\n\n\n\n\n\n\n\n\n\nPress Enter to Submit");
+FILE * fPointer;
+ sprintf(userfile,"unity\\unity1\\feedback.txt");
+fPointer = fopen(userfile,"a");
+fprintf(fPointer,"\nDATE : %d/0%d/2022",date,month);
+fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(fPointer,"\n7567 %d",acc);
+fprintf(fPointer,"\n%s\n\n",op);
+fclose(fPointer);
+getch();
+}
+clrscr();
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+break;
+case 8:
+clrscr();
+gets(em);
+printf("\n\n\n\t\t\tREGISTER YOUR ISSUE HERE.\n\n\n\n");
+gets(ab);
+printf("\n\n\n\n\n\nPress Enter");
+getch();
+clrscr();
+printf("\n\n\nPLEASE ENTER LAST FOUR DIGIT OF YOUR ACCOUNT NO:\n   ");
+scanf("%d",&bc);
+if(bc<10000)
+{clrscr();
+ FILE * fp;
+  sprintf(userfile,"t%d.txt",bc);
+  fp = fopen(userfile, "r");
+
+
+
+    if(fp==NULL)
+    {
+    clrscr();
+    sound(400);
+delay(200);
+nosound();
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+    getch();
+    exit(1);
+    }
+    if(fp!=NULL)
+    {
+
+cd=newpin+bc;
+printf("\n\n\nPLEASE ENTER YOUR MOBILE NO:::");
+scanf("%s",&xi);
+clrscr();
+printf("\n\n\nDO YOU HAVE ANY CHAT ID \n\n>Press 1 for YES\n>Press 2 for NO\n");
+scanf("%d",&no);
+}
+if(no==1)
+{
+sound(400);
+delay(200);
+nosound();
+textattr(1 + ((3) <<4));
+printf("\n\n\n\nDON't WORRY DEAR\nYOUR ACCOUNT 7567%d IS UNDER IN OUR SURVIELENCE\nYOUR CHAT ID IS 75676677%d",bc,bc+2500);
+getch();
+}
+if(no==2)
+{
+printf("\n\n\nOK! WE will take action to your issue within 24HRs.\n\nYour COMPLAIN no. is %d.\n\nYou can even contact to Costumer Service:::90909090\n\n\n\nDEAR YOU CAN EVEN CHAT TO AURA\nSHE WILL DEFFINETLY TAKE ANY ACTION AND SAVES LOTS OF YOUR PRECIOUS TIME",cd);
+getch();
+}
+}
+FILE * fPointer;
+fPointer = fopen("issue.txt","a");
+fprintf(fPointer,"\n\n\nDATE : %d/0%d/2022",date,month);
+fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+fprintf(fPointer,"\nACCOUNT NO : 7567 %d",bc);
+fprintf(fPointer,"\nMOBILE NO : %s",xi);
+fprintf(fPointer,"\nISSUE : %s",ab);
+fprintf(fPointer,"\nCOMPLAIN ID : %d",cd);
+
+if(no==1)
+{
+fprintf(fPointer,"\nCHAT ID : 75676677%d",bc+2500);
+}
+if(no==2)
+fprintf(fPointer,"\nNo Chat id\n");
+if(bc>10000)
+{clrscr();
+printf("\n\n\n\n\n\n\t\t\tSOMETHING WENT WRONG \n\n\n\t\t\tISSUE NOT REGISTERED\n\n\n\t\t\tTRY AGAIN");
+getch();
+}fprintf(fPointer,"\nSTATUS:::");
+
+
+fclose(fPointer);
+FILE * pf=NULL;
+sprintf(userfile, "st%d.txt",bc);
+pf=fopen(userfile,"w");
+fprintf(pf,"SATUTUS:::Pending");
+fclose(pf);
+clrscr();
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANK YOU FOR CHOOSING UNITY BANK");
+getch();
+break;
+case 9:
+printf("\n\n\n\t\t\tWELCOME ");
+printf("\n\n\n\nROBOT TEST             (press enter 3 times)");
+getch();
+getch();
+getch();
+clrscr();
+sound(400);
+delay(200);
+nosound();
+
+printf("HII \n\nI'm AURA YOUR VIRTUAL ASSISTANT");
+printf("\n\n\nPLEASE ENTER YOUR ACCOUNT NO:::7567 ");
+scanf("%d",&acc);
+if(acc<10000)
+{
+
+clrscr();
+gets(em);
+textattr(1 + ((3) <<4));
+printf("\n\nPLEASE ENTER YOUR PROBLEM\n\n");
+gets(problem);
+printf("\n\nOK!!");
+getch();
+printf("\n\n\nPlease press Enter");
+getch();
+sound(400);
+delay(200);
+nosound();
+printf("\n\n\nI UNDERSTOOD YOUR PROBLEM\n\n");
+printf("\n\nI'm JUST REFRESHING YOUR ACCOUNT (7567%d) SO PLEASE STAY HERE\n\n",acc);
+printf("\nPLEASE PRESS ENTER");
+textattr(1 + ((3) <<4));
+getch();
+clrscr();
+printf("\n\nYOUR ACCOUNT HAS BEEN REFRESHED\n\n");
+printf("\n\n\n\nI THINK NOW YOU WOULD NOT FACE ANY ISSUE");
+printf("\n\n\n>>>PLEASE NOTE* THAT YOUR ACCOUNT NO: 7567%d IS UNDER SURVILEINCE FOR ATLEAST 48hrs. BY OUR TECHNICAL SPECIALIST",acc);
+printf("\n\n\nPRESS ENTER");
+getch();
+clrscr();
+printf("\n\n\nYOUR CHAT ID IS 75676677%d\n\n\nPLEASE NOTE YOUR CHAT ID",acc+2500);
+printf("\n\n\nPLEASE RATE YOUR EXPERIENCE WITH AURA  (out of 5)  ");
+scanf("%d",&rate);
+if(rate<1)
+{clrscr();
+printf("\n\n\n\t\t\tNOT GOOD");
+printf("\n\nPlease Suggest our Problem\n\n");
+scanf("%s",&sug);
+sound(400);
+delay(200);
+nosound();
+printf("\n\n\n\nThanks for your suggestion\n\n\nWE WILL DEFINETLY IMPROVE IT");
+}
+if(rate==1)
+{clrscr();
+printf("\n\n\nNICE");
+gets(em);
+printf("\n\n\nPlease suggest your views on AURA\n\n");
+gets(sug);
+printf("Thank you Very much");
+}
+if(rate==2)
+{clrscr();
+printf("\n\n\nGOOD");
+printf("\n\n\nThank You DEAR");
+ }
+ if(rate==3)
+ {clrscr();
+ printf("\n\n\nVERY GOOD");
+ printf("\n\n\nThanks DEAR");
+ }
+ if(rate==4)
+ {clrscr();
+ printf("\n\n\nEXCELLENT");
+ printf("\n\n\nThanks DEAR");
+ }
+ if(rate==5)
+ {
+ clrscr();
+ printf("\n\n\nOUTSTANDING");
+ printf("\n\n\nDEAR COSTUMER THANK YOU VERY MUCH FOR RATING AURA 5\n\nWE WILL TRY TO KEEP IT UP");
+ }
+ if(rate>5||rate<5)
+ {
+ clrscr();
+ printf("\n\n\n\n\n\n\t\t\t!!ERROR IN RATING!!");
+ getch();
+ }
+ fPointer = fopen("aura.txt","a");
+ fprintf(fPointer,"\n\n\nDATE : %d/0%d/2022",date,month);
+ fprintf(fPointer,"\nTIME>%02d:%02d:%02d",
+	   current_time->tm_hour,
+	   current_time->tm_min,
+	   current_time->tm_sec);
+ fprintf(fPointer,"\nPROBLEM : %s",problem);
+ fprintf(fPointer,"\nCHAT ID : 75676677%d",acc+2500);
+ fprintf(fPointer,"\nACCOUNT NO : 7567 %d",acc);
+ fprintf(fPointer,"\nRATINGS : %d",rate);
+ if(rate<2)
+ {
+ fprintf(fPointer,"\nSUGGESTIONS : %s\n",sug);
+
+ }
+ if(acc>10000)
+ {
+ clrscr();
+  textattr(2 + ((8) << 4));
+ printf("\n\n\n\n\t\t\t!!!ERROR IN ACCOUNT NO:%d ",acc);
+ getch();
+ }
+ }
+ printf("\n\n\n\n\n\n\n\n\n\t\t\tTHANKS FOR CHOOSING UNITY BANK");
+fprintf(fPointer,"\n\nSTATUS:::");
+fclose(fPointer);
+break;
+case 10:
+clrscr();
+printf("\n\nACCESS YOUR DATA");
+printf("\nEnter Your Account no: 7567 ");
+scanf("%d",&credit);
+printf("\n\nEnter Your Secret Pin: ");
+while (ein<=3)
+{
+    str[ein]=getch();
+    che=str[ein];
+    if(che==13) break;
+    else printf("*");
+    ein++;
+}
+str[ein]='\0';
+w=atoi(str);
+if(w==credit-113||w==credit-110)
+{
+sound(400);
+delay(200);
+nosound();
+clrscr();
+printf("\n\n\n>Press 1 to see your ACCOUNT DETAILS\n\n>Press 2 to see Available Money\n\n>Press 3 to see YOUR LOAN DETAILS\n\n>Press 4 to OPEN MAILBOX\n\n>Press 5 to TRANSACTIONAL HISTORY\n\n>Press 6 to See LOAN STATUS\n\n>Press 7 to See Complain Status\n\n>Press 8 for UNITY BANK WORK PORTION(not for costumers)\n\n ");
+scanf("%d",&see);
+if(w==credit-113)
+{
+if(see==1)
+{
+clrscr();
+sprintf(userfile,"%d.txt",credit);
+fPointer = fopen(userfile,"r");
+char singleline[500];
+int i;
+if(fPointer==NULL)
+{clrscr();
+sound(400);
+delay(200);
+nosound();
+textattr(1 + ((3) <<6));
+printf("\n\n\n\n!!ERROR ACCOUNT!!");
+getch();
+exit(1);
+}
+while(!feof(fPointer))
+
+{
+fgets(singleline,500,fPointer);
+puts(singleline);
+}
+fclose(fPointer);
+getch();
+}
+if(see==2)
+{
+clrscr();
+
+
+  sprintf(userfile, "t%d.txt", credit);
+fPointer = fopen(userfile,"r");
+char singleline[600];
+if(fPointer==NULL)
+{clrscr();
+ textattr(2 + ((8) << 4));
+printf("\n\n\n\n!!ERROR ACCOUNT!!");
+getch();
+exit(1);
+}
+while(!feof(fPointer))
+{
+fgets(singleline,600,fPointer);
+puts(singleline);
+}
+getch();
+fclose(fPointer);
+}
+if(see==3)
+{clrscr();
+  sprintf(userfile, "%da.txt", credit);
+fPointer = fopen(userfile,"r");
+char singleline[100];
+if(fPointer==NULL)
+{
+	sprintf(userfile,"%dh.txt",credit);
+ fPointer = fopen(userfile,"r");
+if(fPointer==NULL)
+{
+clrscr();
+sound(400);
+delay(200);
+nosound();
+ textattr(2 + ((8) << 4));
+printf("\n\n\n\n!!ERROR ACCOUNT!!");
+getch();
+exit(1);
+}
+
+clrscr();
+printf("\n\n\n\nNO LOAN IS FILED");
+getch();
+exit(1);
+}
+while(!feof(fPointer))
+{
+fgets(singleline,100,fPointer);
+puts(singleline);
+}
+getch();
+fclose(fPointer);
+
+}
+
+
+if(see==4)
+{
+clrscr();
+
+fPointer = fopen("mailbox.txt","r");
+char singleline[1000];
+while(!feof(fPointer))
+
+{
+fgets(singleline,1000,fPointer);
+puts(singleline);
+}
+clrscr();
+
+getch();
+
+
+fclose(fPointer);
+getch();
+}
+
+if(see==5)
+{
+printf("\nTransactional History::");
+textattr(1 + ((3) <<4));
+sprintf(userfile,"%dh.txt",credit);
+ fPointer = fopen(userfile,"r");
+if(fPointer==NULL)
+{
+clrscr();
+sound(400);
+delay(200);
+nosound();
+printf("\n\n\n\n!!ERROR ACCOUNT!!");
+getch();
+exit(1);
+}
+clrscr();
+char singleline[2000];
+while(!feof(fPointer))
+
+{
+fgets(singleline,2000,fPointer);
+puts(singleline);
+}
+fclose(fPointer);
+getch();
+}
+if(see==6)
+{
+	clrscr();
+	FILE*fPointer;
+	sprintf(userfile, "s%d.txt", credit);
+	fPointer = fopen(userfile,"r");
+char singleline[1000];
+if(fPointer==NULL)
+{       sprintf(userfile,"%dh.txt",credit);
+ fPointer = fopen(userfile,"r");
+if(fPointer==NULL)
+{
+clrscr();
+sound(400);
+delay(200);
+nosound();
+printf("\n\n\n\n!!ERROR ACCOUNT!!");
+getch();
+exit(1);
+}
+
+	clrscr();
+	sound(400);
+	delay(200);
+	nosound();
+	printf("\n\n\n\nNO LOAN IS FILED");
+	getch();
+       exit(1);
+}
+	while(!feof(fPointer))
+{
+	fgets(singleline,1000,fPointer);
+	puts(singleline);
+}
+getch();
+	fclose(fPointer);
+}
+
+if(see==7)
+{clrscr();
+
+FILE * fPointer;
+sprintf(userfile, "st%d.txt", credit);
+fPointer = fopen(userfile,"r");
+char singleline[500];
+if(fPointer==NULL)
+{
+printf("\nSTATUS:::No Complain Yet");
+getch();
+exit(1);
+}
+while(!feof(fPointer))
+{
+fgets(singleline,500,fPointer);
+}
+printf("%s",singleline);
+fclose(fPointer);
+getch();
+}
+/*
+if(see==8)
+{
+if(w==credit-110)
+{
+char upstatus[50000];
+clrscr();
+printf("\nEnter Password:::");
+while (einn<=2)
+{
+    str[einn]=getch();
+    chee=str[einn];
+    if(chee==13) break;
+    else printf("*");
+    einn++;
+}
+str[einn]='\0';
+code=atoi(str);
+if(code==763)
+{ gets(em);
+clrscr();
+see=0;
+printf("\n\t\t\t!!UNITY BANK EMPOLY PORTION!!");
+printf("\n\n\n>Press 1 to see Bank Total Money\n\n>Press 2 to Update Loan Status\n\n>Press 3 to Update Complain Status\n\n>Press 4 to Update Account Details\n\n>Press 5 to Freeze Your Account\n\n>Press 6 to Remove Hold\n\n ");
+scanf("%d",&see);
+if(see==1)
+{
+clrscr();
+
+fPointer = fopen("ammount.txt","r");
+char singleline[200];
+while(!feof(fPointer))
+
+{
+fgets(singleline,200,fPointer);
+puts(singleline);
+}
+fclose(fPointer);
+printf("\n\n\nTotal Bank Money Is :::%s",singleline);
+getch();
+}
+if(see==2)
+{
+char upstatus[2000];
+	clrscr();
+	FILE*fPointer;
+	sprintf(userfile, "s%d.txt", credit);
+	fPointer = fopen(userfile,"r");
+if(fPointer==NULL)
+{	clrscr();
+	sound(400);
+	delay(200);
+	nosound();
+	printf("\n\n\n\nNO LOAN IS FILED");
+	getch();
+       exit(1);
+}
+gets(em);
+printf("\n\n\nUpdate Status:::");
+gets(upstatus);
+printf("\n\nLOAN STATUS UPDATED:");
+getch();
+ FILE * pf=NULL;
+    sprintf(userfile, "s%d.txt",credit);
+    pf = fopen(userfile, "w");
+    fprintf(pf,"\nStatus:::%s",upstatus);
+    fprintf(pf,"\nACCOUNT NO:::%d",credit);
+    fprintf(pf,"\nPIN:::%d",w);
+    fprintf(pf,"\nDATE:::%d/0%d/2022",date,month);
+    fclose(pf);
+      pf = fopen("status.txt", "a");
+    fprintf(pf,"\n\nStatus:::%s",upstatus);
+    fprintf(pf,"\nACCOUNT NO:::%d",credit);
+    fprintf(pf,"\nPIN:::%d",w);
+    fprintf(pf,"\nDATE:%d/0%d/2022\n",date,month);
+    fclose(pf);
+}
+if(see==3)
+{
+char upstatus[5000];
+clrscr();
+gets(em);
+FILE * pf;
+sprintf(userfile, "st%d.txt",credit);
+pf=fopen(userfile,"r");
+if(pf==NULL)
+{
+clrscr();
+printf("\n\n!!No Complain Yet!!");
+getch();
+exit(1);
+}
+if(pf!=NULL)
+{
+char singleline[1000];
+while(!feof(fPointer))
+{
+fgets(singleline,500,fPointer);
+}
+printf("\nOLD STATUS:::%s",singleline);
+
+printf("\n\nNEW STATUS::: ");
+gets(upstatus);
+sound(400);
+delay(200);
+nosound();
+printf("\n\nStatus Updated:");
+    getch();
+    pf = fopen(userfile,"w");
+    fprintf(pf,"\nStatus:::%s",upstatus);
+    fclose(pf);
+}
+}
+if(see==4)
+{clrscr();
+printf("!!Update Your Account Details!!::");
+printf("\n\nEnter Official Pin:::");
+scanf("%d",&w);
+if(w==credit-113)
+{
+
+gets(em);
+//textattr(1 + ((3) <<4));
+printf("\n\nNAME:");
+gets(vp);
+printf("\nFATHER's NAME:");
+gets(ap);
+printf("\nMOTHER's NAME:");
+gets(wp);
+printf("\nAGE:");
+scanf("%d",&as);
+gets(em);
+printf("\nDate of Birth:");
+gets(dob);
+clrscr();
+printf("\nSTATE: ");
+gets(state);
+printf("\nCITY: ");
+gets(jk);
+printf("\nSector: ");
+
+gets(colony);
+printf("\nHouse NO: ");
+gets(az);
+printf("\n\n\nTHANK YOU \n\n\nPress Enter");
+getch();
+clrscr();
+printf("\n\n\nMOBILE NO:");
+gets(lk);
+clrscr();
+printf("\n\n\nGOVERNMENT ID PROOF ");
+printf("\n\n\n\nPress 1 for AADHAR CARD\n\nPress 2 for PAN CARD\n\n");
+scanf("%d",&proof);
+textattr(1 + ((3) <<4));
+if(proof==1)
+{
+clrscr();
+
+printf("\n\n\nPLEASE ENTER YOUR AADHAR NO:::");
+scanf("%s",&id);
+printf("\n\n\n\t\t\tTHANK YOU (press enter)");
+getch();
+clrscr();
+printf("\n\n\n\n\n\nTHANK YOU VERY MUCH FOR SUBMITTING ADHAR CARD");
+getch();
+}
+if(proof==2)
+{clrscr();
+printf("\n\n\nPLEASE ENTER YOUR PAN NO:::");
+scanf("%s",&id);
+printf("\n\n\n\t\t\tTHANK YOU (press enter)");
+getch();
+clrscr();
+printf("\n\n\n\n\n\nTHANK YOU VERY MUCH FOR SUBMITTING PAN NO:");
+getch();
+}
+if(proof<3)
+{
+  FILE * pf;
+    sprintf(userfile, "%d.txt",credit);
+    pf = fopen(userfile, "r");
+    if(pf==NULL)
+    {
+    clrscr();
+     textattr(2 + ((8) << 4));
+    printf("\n\n!!Sorry No Such Account Exist!!");
+    exit(1);
+    }
+    if(pf!=NULL)
+    {
+    ju=w;
+    clrscr();
+    sound(400);
+delay(200);
+nosound();
+name1=(strcmpi(vp,wp));
+name2=200-name1;
+textattr(1 + ((3) <<6));
+printf("\n\n\n\n\t\t\tCONGRATULATIONS");
+textattr(1 + ((3) <<4));
+printf("\n\n\t\t  YOUR ACCOUNT HAS BEEN UPDAATED");
+printf("\n\n\nACCOUNT NO::: 7567%d",credit);
+printf("\n\nYour Secret PIN:::%d",credit-113);
+printf("\n\nBANK's PIN:::%d",credit-110);
+printf("\n\nIssue Year:::2022\n\nExpire:::2042");
+printf("\n\n\n>>>*NOTE- BANK's CODE IS 2000");
+printf("\n\n\nPRESS ENTER TO LEAVE");
+textattr(1 + ((3) <<4));
+getch();
+ju=credit;
+    sprintf(userfile, "%d.txt", ju);
+    pf = fopen(userfile, "w");
+    fprintf(pf,"\nACCOUNT RECREATED:");
+    fprintf(pf,"\nDATE : %d/0%d/2022",date,month);
+fprintf(pf,"\nNAME : %s",vp);
+fprintf(pf,"\nFATHER's NAME : %s",ap);
+fprintf(pf,"\nMOTHERS's NAME : %s",wp);
+fprintf(pf,"\nADDERESS : House no. %s of Sector %s in %s City of %s State",az,colony,jk,state);
+fprintf(pf,"\nMOBILE NO : %s",lk);
+fprintf(pf,"\nGOVERNMENT ID : %s",id);
+fprintf(pf,"\nAGE : %d",as);
+fprintf(pf,"\nDOB : %s",dob);
+fprintf(pf,"\nACCOUNT NO : 7567 %d",ju);
+fprintf(pf,"\nCVV NO : %d",name2);
+fprintf(pf,"\nSECRET PIN : %d",ju-113);
+fprintf(pf,"\nBANK's PIN : %d",ju-110);
+    fclose(pf);
+
+clrscr();
+see=0;
+printf("\n\n>Press 1 to see your DETAILS again\n\n>Press 2 to LOGOUT\n\n ");
+scanf("%d",&see);
+if(see==1)
+{sound(400);
+delay(200);
+nosound();
+clrscr();
+textattr(1 + ((3) <<4));
+printf("\t\t\tYOUR DETAILS");
+printf("\nNAME : %s",vp);
+printf("\nFATHER's NAME : %s",ap);
+printf("\nMOTHERS's NAME : %s",wp);
+printf("\nADDERESS : House no. %s of Sector %s in %s City of %s State",az,colony,jk,state);
+printf("\nMOBILE NO : %s",lk);
+printf("\nGOVERNMENT ID : %s",id);
+if(proof==1)
+{printf("\n(AADHAR CARD)");
+}
+if(proof==2)
+{
+printf("\n(PAN CARD)");
+}
+printf("\nAGE : %d",as);
+printf("\nDOB : %s",dob);
+printf("\n\nACCOUNT NO : 7567%d",ju);
+printf("\nCVV NO : %d",name2);
+printf("\nSECRET PIN : %d",ju-113);
+textattr(1 + ((3) <<4));
+getch();
+
+}}
+if(proof>2)
+{
+clrscr();
+sound(400);
+delay(200);
+nosound();
+ textattr(2 + ((8) << 4));
+printf("\n\n\n\n\n\nSOMETHING WENT WRONG:");
+getch();
+exit(1);
+}
+
+clrscr();
+FILE * fPointer;
+fPointer = fopen("account.txt","a");
+fprintf(fPointer,"\n\n\nACCOUNT RECREATION %d",credit);
+fprintf(fPointer,"\nDATE : %d/%d/2022",date,month);
+fprintf(fPointer,"\nNAME : %s",vp);
+fprintf(fPointer,"\nFATHER's NAME : %s",ap);
+fprintf(fPointer,"\nMOTHERS's NAME : %s",wp);
+fprintf(fPointer,"\nADDERESS : House no. %s of Sector %s in %s City of %s State",az,colony,jk,state);
+fprintf(fPointer,"\nMOBILE NO : %s",lk);
+fprintf(fPointer,"\nGOVERNMENT ID : %s",id);
+if(proof==1)
+{
+fprintf(fPointer,"\nID (AADHAR CARD)");
+}
+if(proof==2)
+{
+fprintf(fPointer,"\nID (PAN CARD)");
+}
+fprintf(fPointer,"\nAGE : %d",as);
+fprintf(fPointer,"\nDOB : %s",dob);
+fprintf(fPointer,"\nACCOUNT NO : 7567 %d",ju);
+fprintf(fPointer,"\nCVV NO : %d",name2);
+fprintf(fPointer,"\nSECRET PIN : %d",ju-113);
+fprintf(fPointer,"\nBank's Pin: %d",ju-110);
+fclose(fPointer);
+}
+}}
+*/
+if(see==5)
+{
+clrscr();
+printf("\n\nEnter Official Pin:::");
+scanf("%d",&w);
+if(w==credit-113)
+{char AB[10];
+printf("Press Y/y to Freeze and Hold All the Transactions of Your ACCOUNT!!\n\n");
+scanf("%s",&AB);
+if(AB=="Y"||"y")
+{
+
+FILE * fp;
+  sprintf(userfile,"t%d.txt",credit);
+  fp = fopen(userfile, "r");
+    if(fp==NULL)
+    {
+    clrscr();
+sound(400);
+delay(200);
+nosound();
+ textattr(2 + ((8) << 4));
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+    exit(1);
+    }
+  clrscr();
+  printf("\n\nYour transactions are Put on Hold, to Remove Hold Please Contact Bank Again");
+  printf("\n\n\n\n\n\n\n\t\t\tTHANKS FOR USING UNITY BANK");
+  getch();
+  fclose(fp);
+  sprintf(userfile,"HOLD%d.txt",credit);
+  fp=fopen(userfile,"w");
+  fprintf(fp,"HOLD");
+  fclose(fp);
+}
+}
+}
+if(see==6)
+{char AB[10];
+clrscr();
+printf("\n\nPress 'Y/y'to remove HOLD:::");
+scanf("%s",&AB);
+if(AB=="Y"||"y")
+{
+FILE * fp;
+sprintf(userfile,"t%d.txt",credit);
+fp = fopen(userfile, "r");
+    if(fp==NULL)
+    {
+    clrscr();
+sound(400);
+delay(200);
+nosound();
+ textattr(2 + ((8) << 4));
+    printf("\n\n\n!!SORRY!!NO SUCH ACCOUNT HAS BEEN CREATED");
+    exit(1);
+    }
+
+
+  if(fp!=NULL)
+  {
+  fscanf(fp,"%lld",&ar);
+  while(!feof(fp))
+  {
+  fscanf(fp,"%lld",&ar);
+  }
+  fclose(fp);
+  FILE * fp ;
+  sprintf(userfile,"HOLD%d.txt",credit);
+  fp = fopen(userfile, "r");
+  if(fp==NULL)
+  {
+  clrscr();
+  printf("\n\n\nNO HOLD ON FILE");
+  exit(1);
+  }
+  if(fp!=NULL)
+  {
+  remove(userfile);
+  printf("File is removed:::");
+  getch();
+  if(fp==NULL)
+  {
+  clrscr();
+  printf("\n\n\nHold is Removed From Your Account, Now You Can Do Transactions with Your Account");
+  getch();
+  fclose(fp);
+  printf("\n\n\n\n\n\n\n\t\t\tTHANKS FOR USING UNITY BANK");
+  getch();
+}}}}}}
+}
+break;
+
+default:
+sound(400);
+delay(200);
+nosound();
+printf("\n\n\n\n\n\n\n\n\t\t\t!!SORRY!! InValid InFormation...\n\n\n\n\n\n\t\t\t\tERROR:::YUKOMZ\n\n\n\n\n1.CHECK CONNECTION.\n2.CHECK INPUT DATA.\n3.CONTACT COSTUMER SERVICE.");
+getch();
+clrscr();
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\tTHANK YOU FOR CHOOSING UNITY BANK");
+}
+}
+}
+}
